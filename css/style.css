@@ -512,7 +512,7 @@ a:focus {
 .contact_section .contact-form input {
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: white;
   width: 100%;
   margin: 15px 0;
   padding: 10px 20px;
@@ -661,7 +661,7 @@ a:focus {
 
   @media (max-width: 768px) {
     body {
-      background-color: black;
+      background-color: rgb(255, 255, 255);
       color: white;
     }
   
@@ -683,7 +683,7 @@ a:focus {
     }
   
     .info_section {
-      background-color: #232323;
+      background-color: #2c2c2c;
       color: #ffffff;
     }
   
@@ -698,10 +698,6 @@ a:focus {
     }
   
     /* Add any other elements that need to be styled for dark mode */
-  }  body {
-    background-color: black;
-    color: white;
-  }
 
   .footer_section p {
     color: #fbfcfd;
@@ -719,5 +715,5 @@ a:focus {
   .social_box a:hover {
     color: #fec016;
   }
-
+}
   /* Add any other elements that need to be styled for dark mode */
