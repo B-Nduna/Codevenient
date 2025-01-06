@@ -657,3 +657,67 @@ a:focus {
 .social_box a:hover {
   color: #fec016;
 }
+
+
+  @media (max-width: 768px) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  
+    .footer_section p {
+      color: #fbfcfd;
+      border-top: 1px solid #ffffff;
+    }
+  
+    .footer_section a {
+      color: #fbfcfd;
+    }
+  
+    .social_box a {
+      color: #ffffff;
+    }
+  
+    .social_box a:hover {
+      color: #fec016;
+    }
+  
+    .info_section {
+      background-color: #232323;
+      color: #ffffff;
+    }
+  
+    .info_section h5,
+    .info_section .info_insta .insta_container .insta-box,
+    .info_section .info_contact .img-box {
+      color: #ffffff;
+    }
+  
+    .info_section .info_insta .insta_container .insta-box {
+      background-color: #232323;
+    }
+  
+    /* Add any other elements that need to be styled for dark mode */
+  }  body {
+    background-color: black;
+    color: white;
+  }
+
+  .footer_section p {
+    color: #fbfcfd;
+    border-top: 1px solid #ffffff;
+  }
+
+  .footer_section a {
+    color: #fbfcfd;
+  }
+
+  .social_box a {
+    color: #ffffff;
+  }
+
+  .social_box a:hover {
+    color: #fec016;
+  }
+
+  /* Add any other elements that need to be styled for dark mode */
