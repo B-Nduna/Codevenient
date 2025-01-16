@@ -666,49 +666,182 @@ a:focus {
   color: #fec016;
 }
 
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure body and html take full width */
+}
 
-  @media (max-width: 768px) {
-    body {
-      background-color: rgb(0, 0, 0);
-      color: white;
-    }
-  
-    .footer_section p {
-      color: #fbfcfd;
-      border-top: 1px solid #ffffff;
-    }
-  
-    .footer_section a {
-      color: #fbfcfd;
-    }
-  
-    .social_box a {
-      color: #ffffff;
-    }
-  
-    .social_box a:hover {
-      color: #fec016;
-    }
-  
-    .info_section {
-      background-color: #2c2c2c;
-      color: #ffffff;
-    }
-  
-    .info_section h5,
-    .info_section .info_insta .insta_container .insta-box,
-    .info_section .info_contact .img-box {
-      color: #ffffff;
-    }
-  
-    .info_section .info_insta .insta_container .insta-box {
-      background-color: #232323;
-    }
-  
-    /* Add any other elements that need to be styled for dark mode */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.heading_container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.do_section .do_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.do_section .box {
+  flex: 1 1 calc(25% - 30px);
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.do_section .box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact_section .contact-form {
+  width: 100%;
+}
+
+.contact_section .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_section .contact-form form div {
+  margin-bottom: 15px;
+}
+
+.contact_section .contact-form form button {
+  align-self: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .do_section .do_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .do_section .box {
+    flex: 1 1 100%;
+    margin: 15px 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading_container h2 {
+    font-size: 24px;
+  }
+
+  .heading_container p {
+    font-size: 16px;
+  }
+
+  .do_section .box h6 {
+    font-size: 18px;
+  }
+}
+
+/* Existing styles */
+.social_box a:hover {
+  color: #fec016;
+}
+
+.info_section {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.info_section h5,
+.info_section .info_insta .insta_container .insta-box,
+.info_section .info_contact .img-box {
+  color: #ffffff;
+}
+
+.info_section .info_insta .insta_container .insta-box {
+  background-color: #232323;
+}
+
+.footer_section {
+  justify-content: center;
+}
+
+.footer_section p {
+  color: #fbfcfd;
+  border-top: 1px solid #ffffff;
+}
+
+.footer_section a {
+  color: #fbfcfd;
+}
+
+.social_box a {
+  color: #ffffff;
+}
+
+.social_box a:hover {
+  color: #fec016;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  .footer_section p {
+    color: #fbfcfd;
+    border-top: 1px solid #ffffff;
+  }
+
+  .footer_section a {
+    color: #fbfcfd;
+  }
+
+  .social_box a {
+    color: #ffffff;
+  }
+
+  .social_box a:hover {
+    color: #fec016;
+  }
+
+  .info_section {
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+
+  .info_section h5,
+  .info_section .info_insta .insta_container .insta-box,
+  .info_section .info_contact .img-box {
+    color: #ffffff;
+  }
+
+  .info_section .info_insta .insta_container .insta-box {
+    background-color: #232323;
+  }
+
+  /* Add any other elements that need to be styled for dark mode */
 
   .footer_section {
-      justify-content: center;
+    justify-content: center;
   }
   .footer_section p {
     color: #fbfcfd;
