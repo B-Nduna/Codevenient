@@ -1,48 +1,86 @@
-fetch('https://api.sendgrid.com/v3/mail/send', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer YOUR_SENDGRID_API_KEY',
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    personalizations: [{ to: [{ email: 'recipient@example.com' }] }],
-    from: { email: 'nduna700@gmail.com' },
-    subject: 'Contact Form Submission',
-    content: [
-      {
-        type: 'text/plain',
-        value: `Full Name: ${formData.get('full_name')}\n
-                Phone: ${formData.get('phone_number')}\n
-                Email: ${formData.get('email_address')}\n
-                Message: ${formData.get('message')}`,
-      },
-    ],
-  }),
-})
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+// Function to send email using SendGrid
+function sendEmail(formData) {
+  return fetch('https://api.sendgrid.com/v3/mail/send', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer YOUR_SENDGRID_API_KEY', // Replace with your SendGrid API key
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      personalizations: [{ to: [{ email: 'nduna700@gmail.com' }] }],
+      from: { email: 'nduna700@gmail.com' },
+      subject: 'Contact Form Submission',
+      content: [
+        {
+          type: 'text/plain',
+          value: `Full Name: ${formData.get('fullName')}\n
+                  Phone: ${formData.get('phoneNumber')}\n
+                  Email: ${formData.get('emailAddress')}\n
+                  Message: ${formData.get('message')}`,
+        },
+      ],
+    }),
+  });
+}
 
-
+// Function to handle contact form submission
 function sendMessage(event) {
-    event.preventDefault();
-    
-    const fullName = document.getElementById('fullName').value;
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    const emailAddress = document.getElementById('emailAddress').value;
-    const message = document.getElementById('message').value;
-    
-    const whatsappMessage = `Full Name: ${fullName}%0APhone Number: ${phoneNumber}%0AEmail Address: ${emailAddress}%0AMessage: ${message}`;
-    const whatsappUrl = `https://wa.me/0603168301?text=${whatsappMessage}`;
-    
-    const emailSubject = 'Contact Form Submission';
-    const emailBody = `Full Name: ${fullName}\nPhone Number: ${phoneNumber}\nEmail Address: ${emailAddress}\nMessage: ${message}`;
-    const mailtoUrl = `mailto:nduna700@gmail.com?subject=${emailSubject}&body=${emailBody}`;
-    
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
-    
-    // Open Email
-    window.open(mailtoUrl, '_blank');
-  }
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const loadingAnimation = document.getElementById('loadingAnimation');
+  
+  // Show loading animation
+  loadingAnimation.style.display = 'flex';
+  
+  sendEmail(formData)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      alert('Message sent successfully!');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Failed to send message.');
+    })
+    .finally(() => {
+      // Hide loading animation
+      loadingAnimation.style.display = 'none';
+    });
+}
 
+// Function to handle subscribe form submission
+function subscribe(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById('subscribeEmail').value;
+  const formData = new FormData();
+  formData.append('fullName', 'Subscriber');
+  formData.append('phoneNumber', '');
+  formData.append('emailAddress', email);
+  formData.append('message', 'Please subscribe me to the newsletter.');
+  
+  const loadingAnimation = document.getElementById('loadingAnimation');
+  
+  // Show loading animation
+  loadingAnimation.style.display = 'flex';
+  
+  sendEmail(formData)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      alert('Subscription successful!');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Failed to subscribe.');
+    })
+    .finally(() => {
+      // Hide loading animation
+      loadingAnimation.style.display = 'none';
+    });
+}
+
+// Add event listeners to forms
+document.getElementById('contactForm').addEventListener('submit', sendMessage);
+document.getElementById('subscribeForm').addEventListener('submit', subscribe);
