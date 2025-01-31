@@ -67,7 +67,6 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-color: #b5caee;
   background-image: url(../images/bg.jpg);
   background-size: cover;
 }
@@ -741,6 +740,11 @@ a:focus {
     color: white;
   }
 
+  .slider_section {
+    height: 90vh;
+    background-image: url(../images/bg-mob.jpg);
+  }
+
   .footer_section p {
     color: #fbfcfd;
     border-top: 1px solid #ffffff;
@@ -840,6 +844,12 @@ a:focus {
   body {
     background-color: rgb(0, 0, 0);
     color: white;
+  }
+
+  .slider_section {
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
   }
 
   .footer_section p {
