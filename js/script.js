@@ -24,35 +24,17 @@ function sendWhatsApp() {
   }
 }
 
-document.getElementById('subscribe-form').addEventListener('submit', function(event){
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const email = document.getElementById('email').value;
 
   if (email) {
-    const message = 'Hello, I would like to subscribe to the Codevenient Consulting updates. My email is: ${email}';
-    const whatsappLink= 
-    'https://wa.me/0814588898?text=${encodeURIComponent(message)}';
+    const message = `Hello, I would like to subscribe to the Codevenient Consulting updates. My email is: ${email}`;
+    const whatsappLink = `https://wa.me/0814588898?text=${encodeURIComponent(message)}`;
 
-    window.open(whatsappLink,'_blank');
-  }else{
+    window.open(whatsappLink, '_blank');
+  } else {
     alert('Please enter a valid email address.');
-  }
-});
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  navText: [],
-  center: true,
-  autoplay: true,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    1000: {
-      items: 3
-    }
   }
 });
