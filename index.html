@@ -311,22 +311,12 @@
           <div class="row">
             <div class="col-md-9 mx-auto">
               <div class="contact-form">
-                <form>
-                  <div>
-                    <input type="text" id="name" placeholder="Full Name ">
-                  </div>
-                  <div>
-                    <input type="text" id="phone" placeholder="Phone Number">
-                  </div>
-                  <div>
-                    <input type="email" id="email" placeholder="Email Address">
-                  </div>
-                  <div>
-                    <input type="text" id="message" placeholder="Message" class="input_message">
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover" onclick="sendWhatsApp()">Send</button>
-                  </div>
+                <form id="subscribe-form">
+                  <input type="text" id="name" placeholder="Your Name">
+                  <input type="tel" id="phone" placeholder="Your Phone Number">
+                  <input type="email" id="email" placeholder="Your Email">
+                  <textarea id="message" placeholder="Your Message"></textarea>
+                  <button type="submit">Subscribe</button>
                 </form>
               </div>
             </div>
@@ -362,7 +352,7 @@
                 <div class="img-box">
                   <img src="images/envelope-white.png" width="18px" alt="codevenient solutions email">
                 </div>
-                <a href="mailto:codevenientconsulting@gmail.com"><p>info@codevenient.com</p></a>
+                <a href="mailto:nduna700@gmail.com"><p>info@codevenient.com</p></a>
               </div>
             </div>
           </div>
@@ -394,15 +384,15 @@
           <div class="col-md-3">
             <div class="info_form">
               <h5>Get in Touch</h5>
-              <form id="subscribe-form">
-                <input type="email" id="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-              </form>
+              <div class="insta_container">
+                <div>
+                  <p>Stay updated and join our community!</p>
+                </div>
               <div class="social_box">
                 <a href="https://wa.me/0814588898" target="_blank" title="WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://instagram.com/codevenientconsulting?igsh=eTE1cXRtenNpdW53" target="_blank" title="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/company/codevenient-consulting/" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                <a href="https://youtube.com/@CodevenientConsulting" target="_blank" title="YouTube" rel="noopener"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/b-nduna" target="_blank" title="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com/c/YOUR_YOUTUBE_CHANNEL" target="_blank" title="YouTube" rel="noopener"><i class="fab fa-youtube"></i></a>
               </div>
             </div>
           </div>
@@ -438,6 +428,7 @@
         }
       });
     </script>
+    <script src="js/script.js"></script>
   </div>
 </body>
 

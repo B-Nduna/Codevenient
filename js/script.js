@@ -1,40 +1,62 @@
-// Function to handle subscribe form submission
+// Function to handle WhatsApp message sending
 function sendWhatsApp() {
-  let name = 
-  document.getElementById("name").value;
-  let phone = 
-  document.getElementById("phone").value;
-  let email = 
-  document.getElementById("email").value;
-  let message = 
-  document.getElementById("message").value;
+  let name = document.getElementById("name").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
 
-  if (!name||!phone||!email||!message){
-    alert("please fll in all fields before sending.");
+  if (!name || !phone || !email || !message) {
+    alert("Please fill in all fields before sending.");
     return;
   }
 
-  let formattedMessage = 'Name:${name}%0APhone:${phone}%0AEmail:${email}%0AMessage:${message}';
-  let whatsappURL = 
-  'https://wa.me/0814588898?text=${formattedMessage}';
+  let formattedMessage = `Name: ${name}%0A` +
+                         `Phone: ${phone}%0A` +
+                         `Email: ${email}%0A` +
+                         `Message: ${message}`;
+  
+  let whatsappURL = `https://wa.me/27814588898?text=${encodeURIComponent(formattedMessage)}`;
 
-  let userConfirmed = confirm("You are about to be redirected to send your message via WhatsApp. Proceed?");
-  if (userConfirmed){
+  if (confirm("You are about to send a message via WhatsApp. Proceed?")) {
     window.open(whatsappURL, "_blank");
   }
 }
 
-document.getElementById('subscribe-form').addEventListener('submit', function(event) {
-  event.preventDefault();
+// Handle form submission
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("subscribe-form");
 
-  const email = document.getElementById('email').value;
-
-  if (email) {
-    const message = `Hello, I would like to subscribe to the Codevenient Consulting updates. My email is: ${email}`;
-    const whatsappLink = `https://wa.me/0814588898?text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappLink, '_blank');
-  } else {
-    alert('Please enter a valid email address.');
+  if (!form) {
+    console.error("Form not found!");
+    return;
   }
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    sendWhatsApp();
+  });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("subscribe-form");
+
+  if (!form) {
+    console.error("Subscribe form not found!");
+    return;
+  }
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    let email = document.getElementById("email").value.trim();
+
+    if (!email) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    alert(`Subscribed successfully with ${email}!`);
+    form.reset(); // Clear the input field
+  });
+});
+

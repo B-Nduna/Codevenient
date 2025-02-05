@@ -483,6 +483,7 @@ a:focus {
 .contact_section .contact-form {
   padding: 25px;
   border-radius: 20px;
+  text-align: center; /* Center the button */
 }
 
 .contact_section .contact-form input {
@@ -504,6 +505,22 @@ a:focus {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.contact_section .contact-form textarea {
+  border: none;
+  outline: none;
+  background-color: white;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  height: 175px; /* Same height as input_message */
+}
+
+.contact_section .contact-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .contact_section .contact-form button {
   border: none;
   outline: none;
@@ -513,6 +530,7 @@ a:focus {
   background-color: #fec913;
   color: #fff;
   border-radius: 30px;
+  display: inline-block; /* Ensure the button is inline */
 }
 
 .contact_section .map_img-box {
@@ -527,7 +545,7 @@ a:focus {
 .info_section {
   background-color: #faf8f8;
   color: #ffffff;
-  padding: 90px 0 45px 0;
+  padding: 60px 0 45px 0;
 }
 
 .info_section h5 {
