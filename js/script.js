@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent actual form submission
+    event.preventDefault();
     sendWhatsApp();
   });
 });
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent page reload
+    event.preventDefault();
 
     let email = document.getElementById("email").value.trim();
 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     alert(`Subscribed successfully with ${email}!`);
-    form.reset(); // Clear the input field
+    form.reset();
   });
 });
 
