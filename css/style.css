@@ -514,7 +514,7 @@ a:focus {
   padding: 10px 20px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 30px;
-  height: 175px; /* Same height as input_message */
+  height: 175px;
 }
 
 .contact_section .contact-form textarea::placeholder {
@@ -530,11 +530,11 @@ a:focus {
   background-color: #fec913;
   color: #fff;
   border-radius: 30px;
-  display: inline-block; /* Ensure the button is inline */
+  display: inline-block;
 }
 
 .contact_section .map_img-box {
-  width: 80%;
+  width: 70%;
   margin: 25px auto 0 auto;
 }
 
