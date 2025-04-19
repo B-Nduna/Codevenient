@@ -15,7 +15,7 @@ function sendWhatsApp() {
                          `Email: ${email}%0A` +
                          `Message: ${message}`;
   
-  let whatsappURL = `https://wa.me/27814588898?text=${encodeURIComponent(formattedMessage)}`;
+  let whatsappURL = `https://wa.me/27603168301?text=${encodeURIComponent(formattedMessage)}`;
 
   if (confirm("You are about to send a message via WhatsApp. Proceed?")) {
     window.open(whatsappURL, "_blank");
