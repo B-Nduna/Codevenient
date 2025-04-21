@@ -17,7 +17,7 @@
   
     .slider_section {
       height: 90vh;
-      background-image: url(../images/bg.jpg);
+      background-image: url(../images/bg.webp);
       background-size: cover;
     }
   
@@ -130,7 +130,7 @@
     
       .slider_section {
         height: 90vh;
-        background-image: url(../images/bg-mob.jpg);
+        background-image: url(../images/bg-mob.webp);
       }
     
       .footer_section p {
