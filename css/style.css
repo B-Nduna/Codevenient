@@ -667,3 +667,53 @@ a:focus {
 .social_box a:hover {
   color: #fec016;
 }
+
+/* Partners Section Styles */
+.partners_section {
+  padding: 60px 0;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.partner-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.partner-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.partner-item:hover img,
+.partner-item:focus img {
+  filter: grayscale(0%);
+}
+
+/* Remove grayscale for devices that don't support hover (mobile/touch) */
+@media (hover: none), (pointer: coarse), (max-width: 900px) {
+  .partner-item img {
+    filter: none;
+  }
+}
