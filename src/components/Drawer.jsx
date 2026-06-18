@@ -23,7 +23,7 @@ export default function Drawer() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link>
-          <Link to="/terms" onClick={() => setIsOpen(false)}>Terms & Conditions</Link>
+          <Link to="/privacy-terms" onClick={() => setIsOpen(false)}>Privacy & Terms</Link>
         </nav>
       </div>
     </>

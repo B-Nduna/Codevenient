@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Drawer from './components/Drawer'; // New import
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Drawer from './components/Drawer';
 import Footer from './components/Footer';
 import './assets/css/style.css';
-import './components/Drawer.css'; // Add this for the tray styles
+import './components/Drawer.css';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Drawer /> {/* Replaced Navbar */}
+        <Drawer />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
