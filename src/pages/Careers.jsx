@@ -17,7 +17,7 @@ export default function Careers() {
           <div className="row">
             <div className="col-md-5">
               <div className="img-box">
-                <img src="/images/pc.webp" alt="Join Codevenient" />
+                <img src="images/pc.webp" alt="Join Codevenient" />
               </div>
             </div>
             <div className="col-md-7">

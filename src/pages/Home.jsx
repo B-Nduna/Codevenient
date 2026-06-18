@@ -60,7 +60,7 @@ export default function Home() {
           <div className="do_container">
             <div className="box arrow-start arrow_bg">
               <div className="img-box">
-                <img src="/images/wedo-img2.png" alt="UX, UI Agency" />
+                <img src="images/wedo-img2.png" alt="UX, UI Agency" />
               </div>
               <div className="detail-box">
                 <h6>UI/UX Design</h6>
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <div className="box arrow-middle arrow_bg">
               <div className="img-box">
-                <img src="/images/d-2.png" alt="Web Development Agency" />
+                <img src="images/d-2.png" alt="Web Development Agency" />
               </div>
               <div className="detail-box">
                 <h6>Web Dev</h6>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
             <div className="box">
               <div className="img-box">
-                <img src="/images/d-1.png" alt="Marketing Agency" />
+                <img src="images/d-1.png" alt="Marketing Agency" />
               </div>
               <div className="detail-box">
                 <h6>Marketing</h6>
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-5">
               <div className="img-box">
-                <img src="/images/about CV.webp" alt="Consulting Agency Employee" />
+                <img src="images/about CV.webp" alt="Consulting Agency Employee" />
               </div>
             </div>
             <div className="col-md-7">
@@ -122,22 +122,22 @@ export default function Home() {
           <div className="partners-content">
             <div className="partners-grid">
               <div className="partner-item">
-                <img src="/images/p1.webp" alt="Partner Company 1" />
+                <img src="images/p1.webp" alt="Partner Company 1" />
               </div>
               <div className="partner-item">
-                <img src="/images/p2.webp" alt="Partner Company 2" />
+                <img src="images/p2.webp" alt="Partner Company 2" />
               </div>
               <div className="partner-item">
-                <img src="/images/p3.webp" alt="Partner Company 3" />
+                <img src="images/p3.webp" alt="Partner Company 3" />
               </div>
               <div className="partner-item">
-                <img src="/images/p4.webp" alt="Partner Company 4" />
+                <img src="images/p4.webp" alt="Partner Company 4" />
               </div>
               <div className="partner-item">
-                <img src="/images/p5.webp" alt="Partner Company 5" />
+                <img src="images/p5.webp" alt="Partner Company 5" />
               </div>
               <div className="partner-item">
-                <img src="/images/p6.webp" alt="Partner Company 6" />
+                <img src="images/p6.webp" alt="Partner Company 6" />
               </div>
             </div>
           </div>

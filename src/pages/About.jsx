@@ -18,7 +18,7 @@ export default function About() {
           <div className="row">
             <div className="col-md-5">
               <div className="img-box">
-                <img src="/images/about CV.webp" alt="Consulting Agency Employee" />
+                <img src="images/about CV.webp" alt="Consulting Agency Employee" />
               </div>
             </div>
             <div className="col-md-7">

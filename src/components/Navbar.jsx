@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="navbar-header">
       <div className="nav-container">
         <Link to="/" className="nav-brand">
-          <img src="/images/logo.png" alt="Codevenient Logo" className="logo" />
+          <img src="images/logo.png" alt="Codevenient Logo" className="logo" />
         </Link>
         
         <nav className="nav-menu">

@@ -10,7 +10,7 @@ export default function Drawer() {
       {/* The Header Tray Container (Logo + Menu Toggle) */}
       <div className="top-left-header"> {/* Changed class name */}
   <Link to="/" className="nav-brand">
-    <img src="/images/logo.png" alt="Logo" className="logo-small" />
+    <img src="images/logo.png" alt="Logo" className="logo-small" />
   </Link>
   <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
     {isOpen ? '✕' : '☰'}
@@ -23,6 +23,7 @@ export default function Drawer() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link>
+          <Link to="/terms" onClick={() => setIsOpen(false)}>Terms & Conditions</Link>
         </nav>
       </div>
     </>

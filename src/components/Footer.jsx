@@ -11,15 +11,15 @@ export default function Footer() {
               <div className="info_contact">
                 <h5>Contact us</h5>
                 <div>
-                  <div className="img-box"><img src="/images/location-white.png" width="18px" alt="50223 Dihatshwane, Mahikeng" /></div>
+                  <div className="img-box"><img src="images/location-white.png" width="18px" alt="50223 Dihatshwane, Mahikeng" /></div>
                   <p>Mafikeng, South Africa</p>
                 </div>
                 <div>
-                  <div className="img-box"><img src="/images/telephone-white.png" width="12px" alt="telephone" /></div>
+                  <div className="img-box"><img src="images/telephone-white.png" width="12px" alt="telephone" /></div>
                   <p>+27 60 316 8301</p>
                 </div>
                 <div>
-                  <div className="img-box"><img src="/images/envelope-white.png" width="18px" alt="email" /></div>
+                  <div className="img-box"><img src="images/envelope-white.png" width="18px" alt="email" /></div>
                   <a href="mailto:codevenientconsulting@gmail.com"><p>Email</p></a>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="col-md-3">
               <div className="info_info">
                 <h5>Innovation in Action</h5>
-                <img src="/images/pc.webp" width="200px" alt="Codevenient Solutions Mockup" />
+                <img src="images/pc.webp" width="200px" alt="Codevenient Solutions Mockup" />
               </div>
             </div>
             <div className="col-md-3">
