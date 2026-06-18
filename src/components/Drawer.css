@@ -1,0 +1,77 @@
+/* Button in the corner */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 5px 15px;
+}
+
+/* Container for Logo and Button, now on the left */
+.top-left-header {
+  position: fixed;
+  top: 20px;
+  left: 20px; /* Changed from right to left */
+  z-index: 2000;
+  display: flex;
+  align-items: center; /* Straight line alignment */
+  gap: 15px;
+}
+
+.logo-small {
+  width: 40px;
+  height: auto;
+}
+
+.menu-toggle {
+  background: rgba(0, 0, 0, 0.5); /* Good contrast on hero images */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* The Tray */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Initially hidden */
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1500;
+  transition: right 0.4s ease;
+  padding: 100px 40px;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.nav-drawer.open {
+  right: 0; /* Slide into view */
+}
+
+/* Links inside the tray */
+.nav-drawer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-drawer nav a {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-drawer nav a:hover {
+  color: #fec016;
+}
