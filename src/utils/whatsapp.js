@@ -1,17 +1,23 @@
+const WHATSAPP_NUMBER = '+27603168301';
+
 export function sendWhatsApp(name, phone, email, message) {
-  if (!name || !phone || !email || !message) {
-    alert("Please fill in all fields before sending.");
+  const trimmedName = name?.trim() || '';
+  const trimmedPhone = phone?.trim() || '';
+  const trimmedEmail = email?.trim() || '';
+  const trimmedMessage = message?.trim() || '';
+
+  if (!trimmedName || !trimmedPhone || !trimmedEmail || !trimmedMessage) {
+    alert('Please fill in all fields before sending.');
     return;
   }
 
-  let formattedMessage = `Name: ${name}%0A` +
-                         `Phone: ${phone}%0A` +
-                         `Email: ${email}%0A` +
-                         `Message: ${message}`;
-  
-  let whatsappURL = `https://wa.me/27603168301?text=${encodeURIComponent(formattedMessage)}`;
+  const formattedMessage = [
+    `Name: ${trimmedName}`,
+    `Phone: ${trimmedPhone}`,
+    `Email: ${trimmedEmail}`,
+    `Message: ${trimmedMessage}`
+  ].join('\n');
 
-  if (confirm("You are about to send a message via WhatsApp. Proceed?")) {
-    window.open(whatsappURL, "_blank");
-  }
+  const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent(formattedMessage)}`;
+  window.open(whatsappURL, '_blank', 'noopener,noreferrer');
 }

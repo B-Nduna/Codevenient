@@ -1,70 +1,44 @@
-import React from 'react';
+import Reveal from '../components/Reveal';
 
-export default function PrivacyTerms() {
+function PrivacyTerms() {
   return (
-    <div className="sub_page">
-      <section className="do_section layout_padding">
-        <div className="container">
-          <div className="heading_container">
-            <h2>Privacy & Terms</h2>
-          </div>
-          <div className="heading_container mt-4">
-            <h2>Privacy Policy</h2>
-            <p><b>Introduction</b><br />
-               Welcome to Codevenient Consulting. Your privacy is important to us. This Privacy Policy explains how we collect, use, and safeguard your information.
-            </p>
-            <p><b>Information We Collect</b><br /></p>
-            <ol>
-                <li>Personal Information: Name, email address, and phone number (if provided).</li>
-                <li>Non-Personal Information: Website usage data, including cookies and analytics.</li>
-            </ol>
-            <p><b>How We Use Your Information</b><br /></p>
-            <ol>
-                <li>To respond to enquiries and provide our services.</li>
-                <li>To improve website functionality and user experience.</li>
-                <li>To communicate updates about our services.</li>
-            </ol>
-            <p><b>Sharing Your Information</b><br />
-                We do not share your personal information with third parties, except when required by law or for essential service functionality (e.g., payment processors).
-            </p>
-            <p><b>Cookies</b><br />
-                We use cookies to analyze website traffic and enhance user experience. By using our website, you consent to the use of cookies.
-            </p>
-            <p><b>Your Rights</b><br />
-                You can request access to, update, or delete your personal information by contacting us using one of our communication channels in the footer.
-            </p>
-            <p><b>Changes to This Policy</b><br />
-                We may update these terms as needed. Please check back periodically for updates.
-            </p>
-          </div>
+    <div className="container legal" style={{ paddingTop: 140, paddingBottom: 80, maxWidth: 800 }}>
+      <Reveal><p className="label">Sheet 04 — Privacy &amp; Terms</p></Reveal>
+      <Reveal>
+        <h1 style={{ fontSize: 'clamp(1.9rem,3.2vw,2.6rem)', marginTop: 14 }}>
+          Privacy Policy &amp; Terms of Service
+        </h1>
+      </Reveal>
+      <Reveal>
+        <p style={{ color: 'var(--ink-soft)', marginTop: 10, fontFamily: "'IBM Plex Mono',monospace", fontSize: '.82rem' }}>
+          Last updated: January 2026
+        </p>
+      </Reveal>
+
+      <Reveal>
+        <div>
+          <h3>Privacy Policy</h3>
+          <p>1. Information we collect — name, email and any details you submit through our contact or quote forms.</p>
+          <p style={{ marginTop: 10 }}>2. How we use it — to respond to enquiries, scope projects, and, where a client relationship exists, to deliver and support the work.</p>
+          <p style={{ marginTop: 10 }}>3. Third parties — we don't sell contact information. Limited data may pass through tools we use to run the business, such as email or scheduling providers.</p>
+          <p style={{ marginTop: 10 }}>4. Your rights — you can request a copy of what we hold on you, or ask us to delete it, at any time.</p>
+
+          <h3>Terms of Service</h3>
+          <p>1. Engagements — project scope, timelines and fees are agreed in writing before work begins.</p>
+          <p style={{ marginTop: 10 }}>2. Intellectual property — ownership of the final delivered site transfers to the client on full payment; Codevenient retains the right to showcase completed work.</p>
+          <p style={{ marginTop: 10 }}>3. Liability — Codevenient is not liable for indirect or consequential losses arising from use of a delivered site.</p>
+          <p style={{ marginTop: 10 }}>4. Governing law — these terms are governed by the laws of South Africa.</p>
+
+          <p style={{ marginTop: 24 }}>
+            Questions about either policy —{' '}
+            <a href="mailto:hello@codevenient.com" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+              hello@codevenient.com
+            </a>
+          </p>
         </div>
-        
-        <div className="container mt-5">
-          <div className="heading_container">
-            <h2>Terms of Service</h2>
-            <p><b>Acceptance of Terms</b><br />
-                By using the Codevenient Consulting website or services, you agree to these terms. If you do not agree, please discontinue use.
-            </p>
-            <p><b>Use of Services</b><br /></p>
-            <ol>
-                <li>You may use our services for lawful purposes only.</li>
-                <li>You may not engage in activities that disrupt the website or services.</li>
-            </ol>
-            <p><b>Intellectual Property</b><br />
-                All content, including designs, logos, and text, belongs to Codevenient Consulting. Unauthorized use is prohibited.
-            </p>
-            <p><b>Limitation of Liability</b><br />
-                We reserve the right to terminate access to our website or services without notice if terms are violated.
-            </p>
-            <p><b>Governing Law</b><br />
-                These terms are governed by the laws of South Africa.
-            </p>
-            <p><b>Changes to Terms</b><br />
-                We may update these terms as needed. Please check back periodically for updates.
-            </p>
-          </div>
-        </div>
-      </section>
+      </Reveal>
     </div>
   );
 }
+
+export default PrivacyTerms;
