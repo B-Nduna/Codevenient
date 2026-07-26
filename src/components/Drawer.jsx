@@ -37,7 +37,7 @@ function Drawer() {
         <div className="container nav-row">
           <Link to="/" className="brand" onClick={() => setOpen(false)}>
             <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Codevenient logo" className="brand-logo" />
-            Codevenient
+            Codevenience
           </Link>
 
           <ul className="nav-links">
