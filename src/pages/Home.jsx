@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import ClientLogos from '../components/ClientLogos';
+import Seo from '../components/Seo';
 import { sendWhatsApp } from '../utils/whatsapp';
 
 const Crosshairs = () => (
@@ -12,33 +13,47 @@ const Crosshairs = () => (
 );
 
 function ContactForm() {
-  const [sent, setSent] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendWhatsApp(formData.name, formData.phone, formData.email, formData.message);
-    setSent(true);
+    setStatus('sending');
+
+    const form = e.target;
+    const data = new FormData(form);
+    const name = data.get('name')?.toString().trim() || '';
+    const phone = data.get('phone')?.toString().trim() || '';
+    const email = data.get('email')?.toString().trim() || '';
+    const message = data.get('message')?.toString().trim() || '';
+
+    if (!name || !phone || !email || !message) {
+      setStatus('error');
+      return;
+    }
+
+    try {
+      sendWhatsApp(name, phone, email, message);
+      form.reset();
+      setStatus('sent');
+    } catch {
+      setStatus('error');
+    }
   };
+
+  const label =
+    status === 'sent' ? 'WhatsApp opened ✓'
+    : status === 'sending' ? 'Opening WhatsApp…'
+    : status === 'error' ? 'Something went wrong — try again'
+    : 'Send message';
 
   return (
     <form className="oform" onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-      <input type="tel" name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} required />
-      <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-      <textarea name="message" rows="3" placeholder="What are you looking to build?" value={formData.message} onChange={handleChange} required />
-      <button type="submit" className="btn btn-primary">
-        {sent ? 'Message sent ✓' : 'Send message'}
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" rows="3" placeholder="What are you looking to build?" required />
+      <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+        {label}
       </button>
     </form>
   );
@@ -47,8 +62,6 @@ function ContactForm() {
 function Home() {
   const location = useLocation();
 
-  // If we arrived here from another page wanting to scroll to a section
-  // (e.g. clicked "Services" while on /about), do that once mounted.
   useEffect(() => {
     if (location.state?.scrollTo) {
       const t = setTimeout(() => {
@@ -60,6 +73,10 @@ function Home() {
 
   return (
     <>
+      <Seo
+        title="Codevenient Consulting — Strategy, Design & Build"
+        description="We draft it properly before we build it — digital systems for small businesses that need to look sharp and work smoothly."
+      />
       <header className="hero" id="top">
         <div className="container hero-inner">
           <div className="hero-copy">
