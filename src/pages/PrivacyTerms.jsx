@@ -1,8 +1,13 @@
 import Reveal from '../components/Reveal';
+import Seo from '../components/Seo';
 
 function PrivacyTerms() {
   return (
     <div className="container legal" style={{ paddingTop: 140, paddingBottom: 80, maxWidth: 800 }}>
+      <Seo
+        title="Privacy & Terms — Codevenient Consulting"
+        description="Codevenient's privacy policy and terms of service."
+      />
       <Reveal><p className="label">Sheet 04 — Privacy &amp; Terms</p></Reveal>
       <Reveal>
         <h1 style={{ fontSize: 'clamp(1.9rem,3.2vw,2.6rem)', marginTop: 14 }}>
@@ -31,8 +36,8 @@ function PrivacyTerms() {
 
           <p style={{ marginTop: 24 }}>
             Questions about either policy —{' '}
-            <a href="mailto:hello@codevenient.com" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-              hello@codevenient.com
+            <a href="mailto:codevenientconsulting@gmail.com" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+              codevenientconsulting@gmail.com
             </a>
           </p>
         </div>
