@@ -1,4 +1,5 @@
 import Reveal from '../components/Reveal';
+import Seo from '../components/Seo';
 
 const Crosshairs = () => (
   <>
@@ -10,6 +11,10 @@ const Crosshairs = () => (
 function About() {
   return (
     <div className="container" style={{ paddingTop: 140, paddingBottom: 40 }}>
+      <Seo
+        title="About — Codevenient Consulting"
+        description="How Codevenient works, and who's behind the small team building your site."
+      />
       <Reveal><p className="label">Sheet 02 — About</p></Reveal>
       <Reveal>
         <h1 style={{ fontSize: 'clamp(2rem,3.6vw,3rem)', maxWidth: 640, marginTop: 14 }}>
@@ -62,7 +67,7 @@ function About() {
             </p>
             <div className="title-block" style={{ position: 'static', marginTop: 24, borderTop: '1px solid var(--blue-line)', paddingTop: 12 }}>
               <span>FOUNDED: CODEVENIENT CONSULTING</span>
-              <span><b>BASED IN</b>&nbsp;Randburg, South Africa</span>
+              <span><b>BASED IN</b>&nbsp;Mahikeng, South Africa</span>
             </div>
           </div>
         </Reveal>
