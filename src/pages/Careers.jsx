@@ -1,4 +1,5 @@
 import Reveal from '../components/Reveal';
+import Seo from '../components/Seo';
 
 const Crosshairs = () => (
   <>
@@ -16,6 +17,10 @@ const ROLES = [
 function Careers() {
   return (
     <div className="container" style={{ paddingTop: 140, paddingBottom: 40 }}>
+      <Seo
+        title="Careers — Codevenient Consulting"
+        description="Open roles at Codevenient — join a small, deliberately small studio building sites for SMBs."
+      />
       <Reveal><p className="label">Sheet 03 — Careers</p></Reveal>
       <Reveal>
         <h1 style={{ fontSize: 'clamp(2rem,3.6vw,3rem)', maxWidth: 620, marginTop: 14 }}>
@@ -78,7 +83,7 @@ function Careers() {
                     <h3 style={{ marginBottom: 4 }}>{r.title}</h3>
                     <p style={{ color: 'var(--ink-soft)', fontSize: '.86rem' }}>{r.type}</p>
                   </div>
-                  <a className="btn btn-outline" href="mailto:hello@codevenient.com?subject=Application">
+                  <a className="btn btn-outline" href="mailto:codevenientconsulting@gmail.com?subject=Application">
                     Apply
                   </a>
                 </div>
