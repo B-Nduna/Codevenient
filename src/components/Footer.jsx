@@ -1,5 +1,7 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
+const BASE = import.meta.env.BASE_URL;
+
 function Footer() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -18,7 +20,7 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-col">
             <div className="brand" style={{ marginBottom: 14 }}>
-              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Codevenient logo" className="brand-logo" />
+              <img src={`${BASE}images/logo.png`} alt="Codevenient logo" className="brand-logo" />
               Codevenience
             </div>
             <p style={{ color: 'var(--ink-soft)', fontSize: '.9rem', lineHeight: 1.7, maxWidth: 280 }}>

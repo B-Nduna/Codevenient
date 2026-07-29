@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Drawer from './components/Drawer';
 import Footer from './components/Footer';
 import './assets/css/style.css';
@@ -11,7 +11,7 @@ import PrivacyTerms from './pages/PrivacyTerms';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Codevenient">
       <div className="app-container">
         <Drawer />
         <main className="main-content">
