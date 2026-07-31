@@ -142,8 +142,6 @@ function Home() {
         </div>
       </header>
 
-      <ClientLogos />
-
       <section className="spec-strip">
         <div className="container spec-row">
           <span>Built for — <b>wellness</b></span>
@@ -255,6 +253,8 @@ function Home() {
           </Reveal>
         </div>
       </section>
+
+      <ClientLogos />
 
       <section className="section" id="contact">
         <div className="container">

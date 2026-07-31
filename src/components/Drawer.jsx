@@ -4,8 +4,6 @@ import './Drawer.css';
 
 const BASE = import.meta.env.BASE_URL;
 
-// Sections that live on the Home page. Clicking these scrolls there directly
-// if we're already on Home, or navigates Home first and scrolls after render.
 const SECTION_LINKS = [
   { label: 'Services', id: 'services' },
   { label: 'Process', id: 'process' },
@@ -39,7 +37,6 @@ function Drawer() {
         <div className="container nav-row">
           <Link to="/" className="brand" onClick={() => setOpen(false)}>
             <img src={`${BASE}images/logo.png`} alt="Codevenient logo" className="brand-logo" />
-            Codevenience
           </Link>
 
           <ul className="nav-links">
