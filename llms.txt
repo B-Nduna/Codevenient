@@ -1,0 +1,23 @@
+# Codevenient Consulting
+
+> Digital solutions consultancy that designs and builds websites, booking
+> systems and online stores for small and medium businesses, based in
+> Mahikeng, South Africa.
+
+Codevenient plans every project like a real structure before building it —
+discovery, design, build, then ongoing measurement — rather than starting
+from a generic template.
+
+## Services
+- Brand & marketing websites — fast, distinctive sites built to rank and convert on mobile
+- Booking & scheduling systems — automated calendars, deposits and reminders
+- E-commerce builds — catalogue, checkout and stock management tuned to sell
+
+## Pages
+- [Home](https://b-nduna.github.io/Codevenient/): overview, services, process, results, client work, contact
+- [About](https://b-nduna.github.io/Codevenient/about): how Codevenient works and who's behind it
+- [Careers](https://b-nduna.github.io/Codevenient/careers): open roles
+- [Privacy & Terms](https://b-nduna.github.io/Codevenient/privacy-terms): privacy policy and terms of service
+
+## Contact
+codevenientconsulting@gmail.com
