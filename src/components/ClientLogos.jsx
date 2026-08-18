@@ -5,7 +5,7 @@ const BASE = import.meta.env.BASE_URL;
 const CLIENTS = [
   { name: 'Aura Herbal Store', logo: `${BASE}images/clients/p1.webp`, url: 'https://b-nduna.github.io/Aura-Herbal-Store/' },
   { name: 'Nkgong Design Studio', logo: `${BASE}images/clients/p2.webp`, url: 'https://b-nduna.github.io/Nkgong-Design-Studio/' },
-  { name: 'XO Inks', logo: `${BASE}images/clients/p3.webp`, url: 'https://b-nduna.github.io/XO-Inks/' },
+  { name: 'XO Inks', logo: `${BASE}images/clients/p3.webp`, url: 'https://codevenientlab.github.io/XO-Inks/' },
   { name: 'Saprishi', logo: `${BASE}images/clients/p4.webp`, url: 'https://codevenientlab.github.io/saprishi-company-site/' },
   { name: 'Client Five', logo: `${BASE}images/clients/p5.webp`, url: 'https://codevenientlab.github.io/Xoli-s-Bakery/' },
   { name: 'Client Six', logo: `${BASE}images/clients/p6.webp`, url: 'https://codevenientlab.github.io/Flawless-Motoring/' },
