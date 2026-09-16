@@ -1,0 +1,5 @@
+import { Link } from 'react-router-dom';
+import Reveal from './Reveal';
+import ProductCard from './ProductCard';
+import { featuredProducts } from '../data/products';
+export default function ReadySystems(){return <section className="section ready-systems" id="systems"><div className="container"><Reveal><div className="head-row"><div><p className="label">Sheet 04 — Ready-built systems</p><h2>Start from something we've already engineered.</h2></div><p className="sub">Production-ready foundations for real businesses. Buy the source, have us launch it, or use it as the first drawing for a custom build.</p></div></Reveal><Reveal><div className="ready-grid">{featuredProducts.slice(0,4).map(p=><ProductCard key={p.id} product={p} compact/>)}</div></Reveal><Reveal><div className="store-band"><div><span>STORE INDEX / 10 SYSTEMS</span><h3>More trades. More starting points. Less blank-canvas cost.</h3></div><Link className="btn btn-outline" to="/store">Open the store →</Link></div></Reveal></div></section>}

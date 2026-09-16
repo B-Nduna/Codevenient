@@ -1,61 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S586KF0G8"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8S586KF0G8');
-  </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="theme-color" content="#F5F5F0" />
+    <meta name="description" content="Codevenient Consulting — websites, ecommerce, applications and ready-built digital systems for modern businesses." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:title" content="Codevenient Consulting — Strategy, Design & Build" />
+    <meta property="og:description" content="Websites, ecommerce, applications and ready-built digital systems for modern businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://b-nduna.github.io/Codevenient/" />
+    <meta property="og:image" content="https://b-nduna.github.io/Codevenient/og/codevenient-social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://b-nduna.github.io/Codevenient/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Codevenient Consulting</title>
-
-    <link rel="shortcut icon" type="image/png" href="/images/logo.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Codevenient Consulting",
-      "url": "https://b-nduna.github.io/Codevenient/",
-      "logo": "https://b-nduna.github.io/Codevenient/images/logo.png",
-      "email": "codevenientconsulting@gmail.com",
-      "description": "Digital solutions consultancy designing and building websites, booking systems and online stores for small and medium businesses.",
-      "areaServed": "ZA",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mahikeng",
-        "addressRegion": "North West",
-        "addressCountry": "ZA"
-      },
-      "makesOffer": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand & marketing website design" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Booking & scheduling system development" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce website builds" } }
-      ]
-    }
-    </script>
-
-    <!-- GH Pages SPA redirect: restores the real path after 404.html bounces here -->
     <script>
-      (function (l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function (s) {
-            return s.replace(/~and~/g, '&');
-          }).join('?');
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      (function () {
+        if (location.protocol === 'http:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+          location.replace('https:' + location.href.substring(location.protocol.length));
+          return;
         }
-      })(window.location);
+        var params = new URLSearchParams(window.location.search);
+        var route = params.get('route');
+        if (route) {
+          params.delete('route');
+          var query = params.toString();
+          window.history.replaceState(null, '', '/Codevenient/' + route.replace(/^\//, '') + (query ? '?' + query : ''));
+        }
+      })();
     </script>
   </head>
   <body>

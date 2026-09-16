@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
+export default function NotFound(){return <div className="container not-found"><Seo title="404 — Drawing not found | Codevenient" description="The requested Codevenient page could not be found." noindex/><div className="not-found-code">404 / DWG-NF</div><p className="label">Custom 404 / Revision required</p><h1>This drawing isn't in the set.</h1><p>The link may be outdated, mistyped or moved. Head back to the main sheet or browse the systems catalogue.</p><div className="hero-actions"><Link className="btn btn-primary" to="/">Back to home</Link><Link className="technical-link hero-secondary-link" to="/store">Browse systems →</Link></div></div>}

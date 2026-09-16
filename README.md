@@ -1,16 +1,73 @@
-# React + Vite
+# Codevenient Consulting + Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Integrated React + Vite company site and ecommerce-style digital systems catalogue.
 
-Currently, two official plugins are available:
+## Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+With the configured GitHub Pages base, Vite may serve the local project at:
+`http://localhost:5173/Codevenient/`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Production
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+npm run deploy
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Store routes
+- `/store`
+- `/store/:id`
+- `/custom-build`
+- `/checkout`
+
+## Current commerce model
+Checkout intentionally creates a project order and opens WhatsApp rather than collecting money. This lets the storefront work immediately while payment processing, protected downloads and backend order management are added later.
+
+## Persistence
+Cart and saved systems use `localStorage`.
+
+## GitHub Pages
+`public/404.html` redirects deep SPA links back into the app so routes such as `/Codevenient/store/bloom-commerce` can recover on refresh.
+
+## Revision 04.1
+
+- Store cart and saved-system controls now appear only on Store/product/checkout routes.
+- Main consultancy navigation stays clean on Home/About/Careers/Custom Build.
+- Restored the “Companies we've worked with” section before Contact.
+- Homepage ready-system cards now act as previews only; saving happens inside the Store.
+
+## Product imagery (R04.2)
+Real project previews are now wired into the catalogue and product-detail hero for:
+- Legal Executive
+- Sentinel
+- Bloom Commerce
+- INK Studio
+- FORM
+- Motorhaus
+- ANVIL
+
+Products without supplied artwork (Legal Docket, Bereka Market, Drive Pro) automatically retain the drafting-style schematic visual until a real preview is added. Add an optimized image to `public/products/` and set the product's `image` field in `src/data/products.js`.
+
+## R04.3 visual completion
+Generated Codevenient-spec product covers have been added for Legal Docket, Bereka Market, and Drive Pro. All listed store systems now render with a visual product preview instead of schematic fallback cards.
+
+
+## Launch hardening (Rev. 05)
+
+- Separate Privacy Policy and Terms & Conditions pages
+- Consent-gated Google Analytics via `VITE_GA_MEASUREMENT_ID`
+- No frontend secrets: only public Vite configuration belongs in `.env`
+- HTTPS redirect for non-local HTTP visits; GitHub Pages should also have Enforce HTTPS enabled
+- Dynamic titles, descriptions, canonical, Open Graph and Twitter metadata
+- Social preview, favicon, web manifest, sitemap and robots.txt
+- Lazy-loaded product thumbnails plus optimized WebP product images
+- Form validation, honeypots and minimum-submit-time spam friction
+- Custom SPA 404 and GitHub Pages deep-route recovery
+- Consultation Corner added to the Store
+
+For real server-side forms, payments or protected downloads, secrets and spam verification must live in a backend/serverless function rather than this Vite client.
