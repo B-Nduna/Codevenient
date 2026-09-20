@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const DEFAULT_TITLE = 'Codevenient Consulting — Strategy, Design & Build';
 const DEFAULT_DESCRIPTION = 'Websites, ecommerce, applications and ready-built digital systems for modern businesses.';
-const SITE_ROOT = (import.meta.env.VITE_SITE_URL || 'https://b-nduna.github.io/Codevenient').replace(/\/$/, '');
+const SITE_ROOT = (import.meta.env.VITE_SITE_URL || 'https://codevenient.co.za').replace(/\/$/, '');
 const DEFAULT_IMAGE = `${SITE_ROOT}/og/codevenient-social-preview.png`;
 
 function upsertMeta(selector, attrs, content) {

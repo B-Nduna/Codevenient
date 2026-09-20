@@ -1,18 +1,14 @@
 {
   "name": "Codevenient Consulting",
   "short_name": "Codevenient",
-  "start_url": "/Codevenient/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#F5F5F0",
   "theme_color": "#F5F5F0",
   "icons": [
     {
-      "src": "/Codevenient/images/logo.png",
-      "sizes": "any",
-      "type": "image/png"
-    },
-    {
-      "src": "/Codevenient/images/logo.png",
+      "src": "/images/logo.png",
       "sizes": "any",
       "type": "image/png"
     }

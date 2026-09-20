@@ -10,7 +10,7 @@ npm run dev
 ```
 
 With the configured GitHub Pages base, Vite may serve the local project at:
-`http://localhost:5173/Codevenient/`
+`http://localhost:5173/`
 
 ## Production
 
@@ -32,7 +32,7 @@ Checkout intentionally creates a project order and opens WhatsApp rather than co
 Cart and saved systems use `localStorage`.
 
 ## GitHub Pages
-`public/404.html` redirects deep SPA links back into the app so routes such as `/Codevenient/store/bloom-commerce` can recover on refresh.
+`public/404.html` redirects deep SPA links back into the app so routes such as `/store/bloom-commerce` can recover on refresh.
 
 ## Revision 04.1
 
@@ -71,3 +71,13 @@ Generated Codevenient-spec product covers have been added for Legal Docket, Bere
 - Consultation Corner added to the Store
 
 For real server-side forms, payments or protected downloads, secrets and spam verification must live in a backend/serverless function rather than this Vite client.
+
+
+## Custom domain
+
+Production domain: `https://codevenient.co.za`
+
+- Vite builds from `/` because the site now lives at the domain root.
+- `public/CNAME` preserves the apex domain in branch-based deployments.
+- Canonical, Open Graph, sitemap and robots URLs use `https://codevenient.co.za`.
+- Configure GitHub Pages Custom domain as `codevenient.co.za`, DNS A records to GitHub Pages, and `www` as a CNAME to `B-Nduna.github.io`.
