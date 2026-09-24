@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://codevenient.co.za/</loc></url>
-  <url><loc>https://codevenient.co.za/store</loc></url>
-  <url><loc>https://codevenient.co.za/about</loc></url>
-  <url><loc>https://codevenient.co.za/privacy-policy</loc></url>
-  <url><loc>https://codevenient.co.za/terms</loc></url>
-  <url><loc>https://codevenient.co.za/store/legal-executive</loc></url>
-  <url><loc>https://codevenient.co.za/store/legal-docket</loc></url>
-  <url><loc>https://codevenient.co.za/store/sentinel</loc></url>
-  <url><loc>https://codevenient.co.za/store/bloom-commerce</loc></url>
-  <url><loc>https://codevenient.co.za/store/ink-studio</loc></url>
-  <url><loc>https://codevenient.co.za/store/form-studio</loc></url>
-  <url><loc>https://codevenient.co.za/store/bereka-market</loc></url>
-  <url><loc>https://codevenient.co.za/store/drive-pro</loc></url>
-  <url><loc>https://codevenient.co.za/store/motorhaus</loc></url>
-  <url><loc>https://codevenient.co.za/store/anvil</loc></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/</loc><priority>1.0</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/web-design-mahikeng/</loc><priority>0.9</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/web-design-dihatshwane/</loc><priority>0.8</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/web-design-majemantsho/</loc><priority>0.8</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/web-design-mmabatho/</loc><priority>0.8</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store</loc><priority>0.8</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/about</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/privacy-policy</loc><priority>0.2</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/terms</loc><priority>0.2</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/legal-executive</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/legal-docket</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/sentinel</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/bloom-commerce</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/ink-studio</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/form-studio</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/bereka-market</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/drive-pro</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/motorhaus</loc><priority>0.6</priority></url>
+  <url><loc>https://b-nduna.github.io/Codevenient/store/anvil</loc><priority>0.6</priority></url>
 </urlset>

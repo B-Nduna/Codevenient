@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codevenient.co.za/sitemap.xml
+Sitemap: https://b-nduna.github.io/Codevenient/sitemap.xml
