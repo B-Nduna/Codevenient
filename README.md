@@ -10,7 +10,7 @@ npm run dev
 ```
 
 With the configured GitHub Pages base, Vite may serve the local project at:
-`http://localhost:5173/`
+`http://localhost:5173/Codevenient/`
 
 ## Production
 
@@ -32,7 +32,7 @@ Checkout intentionally creates a project order and opens WhatsApp rather than co
 Cart and saved systems use `localStorage`.
 
 ## GitHub Pages
-`public/404.html` redirects deep SPA links back into the app so routes such as `/store/bloom-commerce` can recover on refresh.
+`public/404.html` redirects deep SPA links back into the app so routes such as `/Codevenient/store/bloom-commerce` can recover on refresh.
 
 ## Revision 04.1
 
@@ -72,12 +72,16 @@ Generated Codevenient-spec product covers have been added for Legal Docket, Bere
 
 For real server-side forms, payments or protected downloads, secrets and spam verification must live in a backend/serverless function rather than this Vite client.
 
+## R05.1 — local search pass
 
-## Custom domain
+This revision adds a service-area SEO layer for Codevenient Consulting:
 
-Production domain: `https://codevenient.co.za`
+- Homepage local-service block and internal links
+- ProfessionalService + FAQ structured data
+- South African locale metadata
+- Static, crawlable local landing pages for Mahikeng, Dihatshwane, Majemantsho and Mmabatho
+- Nearby-area relevance for Lomanyaneng, Setlopo, Lerwaneng, Danville, Magogoe, Lonely Park and Lokaleng
+- Natural "web developer near me" / "website builder near me" intent copy (not keyword stuffing)
+- Cleaned sitemap with duplicate/invalid catalogue URLs removed
 
-- Vite builds from `/` because the site now lives at the domain root.
-- `public/CNAME` preserves the apex domain in branch-based deployments.
-- Canonical, Open Graph, sitemap and robots URLs use `https://codevenient.co.za`.
-- Configure GitHub Pages Custom domain as `codevenient.co.za`, DNS A records to GitHub Pages, and `www` as a CNAME to `B-Nduna.github.io`.
+Local rankings still depend on Google Business Profile relevance/distance/prominence, reviews, citations, backlinks, competition and indexing. The site should support those signals rather than claim guaranteed placement.

@@ -9,7 +9,6 @@ import CartDrawer from './components/CartDrawer';
 import WishlistDrawer from './components/WishlistDrawer';
 import CookieConsent from './components/CookieConsent';
 import Analytics from './components/Analytics';
-import OrganizationSchema from './components/OrganizationSchema';
 import Home from './pages/Home';
 import Store from './pages/Store';
 import ProductDetail from './pages/ProductDetail';
@@ -36,7 +35,6 @@ function AppShell() {
     <div className="app-container">
       {loading && <Loader onDone={() => setLoading(false)} />}
       <Analytics />
-      <OrganizationSchema />
       <Drawer />
       <main className="main-content">
         <Routes>

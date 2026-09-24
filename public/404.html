@@ -1,7 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><script>
+<!doctype html><html><head><meta charset="utf-8"><script>
 (function(){
-  var path=window.location.pathname.replace(/^\//,'');
-  var target='/?route='+encodeURIComponent(path)+(window.location.search?'&'+window.location.search.slice(1):'')+window.location.hash;
+  var base='/Codevenient/';
+  var path=window.location.pathname;
+  var route=path.startsWith(base)?path.slice(base.length):path.replace(/^\//,'');
+  var target=base+'?route='+encodeURIComponent(route)+(window.location.search?'&'+window.location.search.slice(1):'')+window.location.hash;
   window.location.replace(target);
 })();
 </script></head><body></body></html>
