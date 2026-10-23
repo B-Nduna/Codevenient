@@ -20,4 +20,4 @@ from a generic template.
 - [Privacy & Terms](https://b-nduna.github.io/Codevenient/privacy-terms): privacy policy and terms of service
 
 ## Contact
-codevenientconsulting@gmail.com
+info@codevenient.co.za
