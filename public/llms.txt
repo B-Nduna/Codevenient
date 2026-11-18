@@ -14,10 +14,10 @@ from a generic template.
 - E-commerce builds — catalogue, checkout and stock management tuned to sell
 
 ## Pages
-- [Home](https://b-nduna.github.io/Codevenient/): overview, services, process, results, client work, contact
-- [About](https://b-nduna.github.io/Codevenient/about): how Codevenient works and who's behind it
-- [Careers](https://b-nduna.github.io/Codevenient/careers): open roles
-- [Privacy & Terms](https://b-nduna.github.io/Codevenient/privacy-terms): privacy policy and terms of service
+- [Home](https://codevenient.co.za/): overview, services, process, results, client work, contact
+- [About](https://codevenient.co.za/about): how Codevenient works and who's behind it
+- [Careers](https://codevenient.co.za/careers): open roles
+- [Privacy & Terms](https://codevenient.co.za/privacy-terms): privacy policy and terms of service
 
 ## Contact
 info@codevenient.co.za
