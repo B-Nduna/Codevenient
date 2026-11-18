@@ -23,7 +23,7 @@ export default function CookieConsent() {
     <div>
       <span className="cookie-ref">SITE PREF / 01</span>
       <h2>Cookies, kept practical.</h2>
-      <p>Essential storage keeps the cart and your preferences working. Optional analytics helps us understand which pages are useful. No advertising cookies.</p>
+      <p>Essential storage keeps your preferences working. Optional analytics helps us understand which pages are useful. No advertising cookies.</p>
       <Link to="/privacy-policy">Read privacy policy →</Link>
     </div>
     <div className="cookie-actions">

@@ -7,9 +7,9 @@ const CLIENTS = [
   { name: 'Aura Herbal Store', file: 'p1.webp', url: 'https://b-nduna.github.io/Aura-Herbal-Store/' },
   { name: 'Nkgong Design Studio', file: 'p2.webp', url: 'https://b-nduna.github.io/Nkgong-Design-Studio/' },
   { name: 'XO Inks', file: 'p3.webp', url: 'https://codevenientlab.github.io/XO-Inks/' },
-  { name: 'Saprishi', file: 'p4.webp', url: 'https://codevenientlab.github.io/saprishi-company-site/' },
   { name: "Xoli's Bakery", file: 'p5.webp', url: 'https://codevenientlab.github.io/Xoli-s-Bakery/' },
-  { name: 'Flawless Motoring', file: 'p6.webp', url: 'https://codevenientlab.github.io/Flawless-Motoring/' },
+  { name: 'Occusmart', file: 'p7.png', url: 'https://occusmart.co.za' },
+  { name: 'Best Enough Driving School', file: 'p8.png', url: 'https://bestenoughdriving.co.za' },
 ];
 
 export default function ClientLogos() {
